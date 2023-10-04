@@ -1,0 +1,93 @@
+/* Reset some default styles for cross-browser consistency */
+body, h1, p, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #007BFF; /* Blue text color */
+}
+
+p {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Blue button background */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) */
+    .container {
+        padding: 10px;
+    }
+
+    select, button {
+        font-size: 16px;
+    }
+}
+
+/* Additional mobile-specific styles */
+
+@media (max-width: 480px) {
+    /* Styles for smaller screens (e.g., smartphones) */
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    select, button {
+        font-size: 14px;
+    }
+}
