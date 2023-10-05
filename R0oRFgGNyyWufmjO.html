@@ -1,38 +1,36 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YashRajPW</title>
-    <link rel="icon" type="image/x-icon" href="https://draft.blogger.com/favicon-image.g?blogID=5841620857981514388">
-    <!--[ Player script ]-->
-    <script src='https://cdn.jwplayer.com/libraries/xhsobJM5.js' type='text/javascript'></script>
-    <script type='text/javascript'>jwplayer.key="XzJfhnyB";</script>
-    <!--[ Player script ]-->
-    <script src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
-</head>
-<body>
-    <script>
-        var DisableDevtool = window.DisableDevtool;
-        DisableDevtool();
-    </script>
-    <div id="myvideo5"></div>
-    <script type="text/javascript">
-        jwplayer("myvideo5").setup({
-            sources: [
-                {
-                    file: "https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/lec04.mp4",
-                    label: "720p HD", // Label for the quality option
-                    default: true, // Set this as the default quality
-                },
-                {
-                    file: "https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/lec04360p.mp4", // Replace with the URL of the lower quality video
-                    label: "360p SD", // Label for the quality option
-                }
-            ],
-            image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipPZ-57E-f0RHFIjE5DwhsVK5GmbJmkUfKud-tVEaVk9AwTRJoKrn1_4E1LDStgbxE4MQaf2O7NvR8YX8vHeMkkQCMUpKTc46_67biFepVqNv0rPmrvhEfYu25t5oNLjiGbek_dkx_lWMt_EP7MLv2-rPU0eQfREXwXvr89Hyj4p8j8-zglCcpvnibccs/s1280/DSTS-min.png",
-        });
-    </script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quality Selector</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipPZ-57E-f0RHFIjE5DwhsVK5GmbJmkUfKud-tVEaVk9AwTRJoKrn1_4E1LDStgbxE4MQaf2O7NvR8YX8vHeMkkQCMUpKTc46_67biFepVqNv0rPmrvhEfYu25t5oNLjiGbek_dkx_lWMt_EP7MLv2-rPU0eQfREXwXvr89Hyj4p8j8-zglCcpvnibccs/s1280/DSTS-min.png" alt="Video Thumbnail" class="thumbnail">
+                <h1>Video Quality Selector</h1>
+                <p>Select the quality option:</p>
+                <!-- Quality selection dropdown -->
+                <select id="qualitySelector">
+                    <option value="240p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/R0oRFgGNyyWufmjO_240.m3u8">240p</option>
+                    <option value="360p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/R0oRFgGNyyWufmjO_360.m3u8">360p</option>
+                    <option value="480p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/R0oRFgGNyyWufmjO_480.m3u8">480p</option>
+                    <option value="720p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Maths/CH%20-%2001%20Basic%20Maths/R0oRFgGNyyWufmjO_720.m3u8">720p</option>
+                </select>
+                <!-- Button to play the selected quality in the browser -->
+                <button id="playButton">Play Video (Browser)</button>
+                <!-- Buttons for mobile users -->
+                <div id="mobileButtons" style="display: none;">
+                    <button id="vlcButton">Open in VLC Player</button>
+                    <button id="mxPlayerFreeButton">Open in MX Player (Free)</button>
+                    <button id="mxPlayerProButton">Open in MX Player (Pro)</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
