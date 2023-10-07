@@ -1,0 +1,36 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quality Selector</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja3jU3JetJPO-VMf5gXVmSlwENPuenRcrnAIGmEPbNsFyWxf2VvsBpZ9xDIMPnXEjn2Yrn6t06g9hTAdSQ6q55Yw9cK4EBT7DQ1IZpd0PbluBW5-8kVLvkAPocibYZylIkXiBPrxjhLWhdCLpU2oRf1eCbqu47kQ9P6sDr8VohElx7Jt5j49P16II24qY/s1280/RJ-min.png" alt="Video Thumbnail" class="thumbnail">
+                <h1>Video Quality Selector</h1>
+                <p>Select the quality option:</p>
+                <!-- Quality selection dropdown -->
+                <select id="qualitySelector">
+                    <option value="240p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee/Physics/Advance%20Session/RryHAkdLUAJyL0lX_240.m3u8">240p</option>
+                    <option value="360p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee/Physics/Advance%20Session/RryHAkdLUAJyL0lX_360.m3u8">360p</option>
+                    <option value="480p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee/Physics/Advance%20Session/RryHAkdLUAJyL0lX_480.m3u8">480p</option>
+                    <option value="720p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee/Physics/Advance%20Session/RryHAkdLUAJyL0lX_720.m3u8">720p</option>
+                </select>
+                <!-- Button to play the selected quality in the browser -->
+                <button id="playButton">Play Video (Browser)</button>
+                <!-- Buttons for mobile users -->
+                <div id="mobileButtons" style="display: none;">
+                    <button id="vlcButton">Open in VLC Player</button>
+                    <button id="mxPlayerFreeButton">Open in MX Player (Free)</button>
+                    <button id="mxPlayerProButton">Open in MX Player (Pro)</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
