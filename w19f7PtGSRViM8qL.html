@@ -1,0 +1,36 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quality Selector</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWjI1BUGM65G7O6vO8OBXnxw3HnBQwc0t5mb9pJPu0imcK6HXMRdRXTryJSH4Qc1y7R2E06iKcJ-l4qzyO4Rt-2PGQ_VVRnBXw3N0nYJ7JNSI2OswN0ayRYcZuVF_q55Vu8wJHu1x0AjncSppVnLmBjVWR53BsaHqma4T82jnCanx0_vGtN63YFEQ-Od8/s1280/NAS-min.png" alt="Video Thumbnail" class="thumbnail">
+                <h1>Video Quality Selector</h1>
+                <p>Select the quality option:</p>
+                <!-- Quality selection dropdown -->
+                <select id="qualitySelector">
+                    <option value="240p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Chemistry/Physical/CH%20-%2003%20Electrochemistry/w19f7PtGSRViM8qL_240.m3u8">240p</option>
+                    <option value="360p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Chemistry/Physical/CH%20-%2003%20Electrochemistry/w19f7PtGSRViM8qL_360.m3u8">360p</option>
+                    <option value="480p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Chemistry/Physical/CH%20-%2003%20Electrochemistry/w19f7PtGSRViM8qL_480.m3u8">480p</option>
+                    <option value="720p" data-video-url="https://mkv4.mkv4.workers.dev/0:/Lakshya%20Jee%20Fastrack/Chemistry/Physical/CH%20-%2003%20Electrochemistry/w19f7PtGSRViM8qL_720.m3u8">720p</option>
+                </select>
+                <!-- Button to play the selected quality in the browser -->
+                <button id="playButton">Play Video (Browser)</button>
+                <!-- Buttons for mobile users -->
+                <div id="mobileButtons" style="display: none;">
+                    <button id="vlcButton">Open in VLC Player</button>
+                    <button id="mxPlayerFreeButton">Open in MX Player (Free)</button>
+                    <button id="mxPlayerProButton">Open in MX Player (Pro)</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
